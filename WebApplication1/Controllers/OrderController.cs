@@ -8,6 +8,7 @@ namespace WebApplication1.Controllers
 {
     public class OrderController : Controller
     {
+        //Models.CodeService codeService = new Models.CodeService();
         // GET: Order
         /// <summary>
         /// 訂單管理系統
@@ -15,6 +16,9 @@ namespace WebApplication1.Controllers
         /// <returns></returns>
         public ActionResult Index()
         {
+            /*Models.OrderService orderService = new Models.OrderService();
+            ViewBag.EmpCodeData = this.codeService.GetEmp();*/
+
             Models.OrderService orderService = new Models.OrderService();
             var order = orderService.GetOrderById("11111");
             ViewBag.CustId = order.CustId;

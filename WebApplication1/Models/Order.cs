@@ -10,6 +10,12 @@ namespace WebApplication1.Models
 {
     public class Order
     {
+        /*public Order()
+        {
+            var ods = new List<Models.OrderDetails>();
+            ods.Add(new OrderDetails() {  ProductId = 58})
+            this.OrderDetails = ods;
+        }*/
         /// <summary>
         /// 訂單編號
         /// </summary>
